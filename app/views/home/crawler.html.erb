@@ -1,0 +1,26 @@
+<h1>Home#crawler</h1>
+<p>Find me in app/views/home/crawler.html.erb</p>
+
+<table>
+    <thead>
+        <tr>
+            <td>제목</td>
+            <td>내용</td>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <%@pr.each do |p|%>
+            <tr>
+                <td><%= p.name %></td>
+                <td><%= p.content%></td>
+
+            </tr>
+        <%end%>
+
+        <!--<%=@post.css('a.name-link').text=%>-->
+
+    </tbody>
+</table>
+
+<a href = '/home/crawler'>크롤링하기</a>
