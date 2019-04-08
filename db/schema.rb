@@ -16,6 +16,10 @@ ActiveRecord::Schema.define(version: 20180723014005) do
   create_table "results", force: :cascade do |t|
     t.string   "name"
     t.string   "content"
+    t.string   "address"
+    t.string   "phone"
+    t.string   "time_d"
+    t.string   "price"
     t.string   "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

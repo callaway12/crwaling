@@ -1,5 +1,4 @@
 <h1>Home#crawler</h1>
-<p>Find me in app/views/home/crawler.html.erb</p>
 
 <table>
     <thead>
@@ -12,8 +11,12 @@
         
         <%@pr.each do |p|%>
             <tr>
-                <td><%= p.name %></td>
-                <td><%= p.content%></td>
+               이름 : <td><%= p.name %></td> <br>
+               종류 : <td><%= p.content%></td><br>
+               주소 : <td><%= p.address%></td><br>
+               전화번호 : <td><%= p.phone%></td><br>
+               영업식간 : <td><%= p.time_d%></td><br>
+               가격대 : <td><%= p.price%></td><br>
 
             </tr>
         <%end%>
